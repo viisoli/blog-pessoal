@@ -1,5 +1,5 @@
 .titulo{
-    color: blueviolet;
+    color: #891394;
     text-align: center;
 }
 .img{
@@ -7,4 +7,24 @@
     height: 500px;
     display: block;
     margin: 0 auto;
+}
+.back2{
+    background: linear-gradient(36deg, #260466 8%, #000000 89%)!important;
+    background-repeat: no-repeat;
+    width:100vh;
+
+    min-height: calc(100vh - 64px);
+
+    background-size: cover;
+    background-position: center;
+}
+.h1{
+    background-color: #00000098!important;
+    justify-content:center;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    margin: 50px;
+    }
+img{
+    border-radius: 30px;
 }

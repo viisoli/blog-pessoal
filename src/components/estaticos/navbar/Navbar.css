@@ -1,0 +1,11 @@
+.back{
+    background: linear-gradient(0deg, #490249 8%, #59037a 89%)!important;
+}
+.bar{
+    display:flex;
+    justify-content:center;
+}
+.title{
+    font-weight: bold!important;
+    margin-right: 50px!important;
+}
