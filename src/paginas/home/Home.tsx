@@ -14,7 +14,7 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#36004b", color: "white" }}>Ver Postagens</Button>
+                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#da689d", color: "white" }}>Ver Postagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6}>
