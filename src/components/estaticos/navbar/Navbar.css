@@ -9,3 +9,10 @@
     font-weight: bold!important;
     margin-right: 50px!important;
 }
+.text-decoration-none{
+    text-decoration: none;
+}
+.cursor{
+    cursor:pointer;
+    color:#ffffff;
+}

@@ -1,25 +1,5 @@
-.titulo{
-    color: #891394;
-    text-align: center;
-}
-.img{
-    width: 500px;
-    height: 500px;
-    display: block;
-    margin: 0 auto;
-}
-.back2{
-    background-image: url(../../assets/img/fundo2.png);
-    background-repeat: no-repeat;
-    width:100vh;
-
-    min-height: calc(100vh - 64px);
-
-    background-size: cover;
-    background-position: center;
-}
 .h1{
-    background-color: #da689dc7 !important;
+    background-color: #da689dc7;
     justify-content:center;
     border-radius: 30px;
     padding: 20px 20px 20px 20px;
@@ -28,4 +8,26 @@
 img{
     border-radius: 30px;
     margin: 30px;
+}
+.caixa{
+    background-image: url(../../assets/img/fundo2.png)!important;
+    background-repeat: no-repeat!important;
+    width:100vh;
+
+    min-height: calc(100vh - 64px)!important;
+
+    background-size: cover!important;
+    background-position: center!important;
+}
+.titulo{
+    color:#ffffff!important;
+    font-weight: bold!important;
+}
+.botao{
+    border-color: #ffffff!important;
+    background-color: #da689d!important;
+    color: #ffffff!important;
+}
+.postagens{
+    background-color: #ffffff!important;
 }
