@@ -1,0 +1,22 @@
+.imagem2{
+    background-image: url(../../assets/img/login.png);
+    background-repeat: 'no-repeat';
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.textos3{
+    font-weight: bold !important;
+}
+
+.btnCancelar{
+    margin-right: 20px!important;
+    background-color: #bd5b89!important;
+    color: #ffffff!important;
+}
+
+.text-decorator-none{
+    text-decoration: none!important;
+}
