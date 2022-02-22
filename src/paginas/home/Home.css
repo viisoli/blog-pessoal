@@ -10,14 +10,14 @@ img{
     margin: 30px;
 }
 .caixa{
-    background-image: url(../../assets/img/fundo2.png)!important;
-    background-repeat: no-repeat!important;
+    background-image: url(../../assets/img/fundo2.png);
+    background-repeat: no-repeat;
     width:100vh;
 
-    min-height: calc(100vh - 64px)!important;
+    min-height: calc(100vh - 138px);
 
-    background-size: cover!important;
-    background-position: center!important;
+    background-size: cover;
+    background-position: center;
 }
 .titulo{
     color:#ffffff!important;
