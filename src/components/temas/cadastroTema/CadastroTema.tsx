@@ -23,7 +23,7 @@ function CadastroTema() {
     })
 
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
             alert("Você precisa estar logado")
             history.push("/login")
     
@@ -39,7 +39,7 @@ function CadastroTema() {
     //useEffect id - vai ficar monitorando o id, se tiver um id disponivel vai ativar a função findbyId, que vai pegar o tema cadastrado de acordo com o id
 
     async function findById(id: string) {
-        buscaId(`/tema/${id}`, setTema, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
               'Authorization': token
             }
@@ -63,14 +63,14 @@ function CadastroTema() {
 
         if (id !== undefined) {
             console.log(tema)
-            put(`/tema`, tema, setTema, {
+            put(`/temas`, tema, setTema, {
                 headers: {
                     'Authorization': token
                 }
             })
             alert('Tema atualizado com sucesso');
         } else {
-            post(`/tema`, tema, setTema, {
+            post(`/temas`, tema, setTema, {
                 headers: {
                     'Authorization': token
                 }

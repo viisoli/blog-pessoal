@@ -8,18 +8,19 @@ import { busca } from '../../../services/Service';
 
 function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([])
-  const [token, setToken] = useLocalStorage('token";');
+  const [token, setToken] = useLocalStorage('token');
   let history = useHistory();
 
   useEffect(() => {
-    if(token == ''){
-        alert("Você precisa estar logado!")
-        history.push("login")
+    if (token === "") {
+      alert("Você precisa estar logado")
+      history.push("/login")
+
     }
-  },[token] )
+  }, [token])
 
   async function getTema(){
-    await busca("/tema", setTemas, {
+    await busca("/temas", setTemas, {
       headers: {
         'Authorization': token
       }

@@ -13,7 +13,7 @@ function ListaPostagem() {
   let history = useHistory();
 
   useEffect(() => {
-    if (token == "") {
+    if (token === "") {
       alert("Você precisa estar logado")
       history.push("/login")
 
@@ -45,13 +45,13 @@ function ListaPostagem() {
               Postagens
             </Typography>
             <Typography variant="h5" component="h2">
-              Título
+              {post.titulo}
             </Typography>
             <Typography variant="body2" component="p">
-              Texto da Postagem
+              {post.texto}
             </Typography>
             <Typography variant="body2" component="p">
-              Tema
+              {post.tema}
             </Typography>
           </CardContent>
           <CardActions>
