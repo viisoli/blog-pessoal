@@ -6,13 +6,17 @@ import Tema from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Service';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { useSelector } from 'react-redux';
 
 function CadastroPost() {
 
     let history = useHistory();//usado para fazer os redrects de pagina
     const { id } = useParams<{ id: string }>();//capturar o id da rota
     const [temas, setTemas] = useState<Tema[]>([])//Armazena  e faz listagem de temas que estão cadastrados na api
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
 
     useEffect(() => {
         if (token == "") {

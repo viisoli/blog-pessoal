@@ -31,3 +31,7 @@ img{
 .postagens{
     background-color: #ffffff!important;
 }
+
+.text-decorator-none{
+    text-decoration: none;
+}
