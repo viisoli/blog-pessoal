@@ -1,5 +1,6 @@
 .back{
-    background-color: #bd5b89!important;
+    background: #aa0854;
+    background: linear-gradient(90deg, #aa0854 0%, #350452 55%, #090979 100%)!important;
 }
 .bar{
     display:flex;

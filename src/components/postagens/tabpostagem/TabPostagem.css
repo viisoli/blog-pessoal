@@ -1,10 +1,23 @@
 .titulo{
     font-weight: bold;
- }
- .barra{
-     background-color: #da689dc7!important;
+    color: #ffffff;
  }
  .texto{
+    height: 60px;
+    color: #ffffff !important;
+ }
+ .sobre{
     font-weight: bold!important;
     color: #ffffff!important;
+    background: linear-gradient(90deg, #aa08549f 0%, #3504529f 55%, #0909799f 100%);
+    padding: 50px;
+    height: 500px;
+    border-radius: 30px;
+ }
+ img{
+    border-radius: 30px;
+    padding-right: 50px;
+ }
+ .barra{
+    background: linear-gradient(90deg, #aa08549f 0%, #3504529f 55%, #0909799f 100%);
  }

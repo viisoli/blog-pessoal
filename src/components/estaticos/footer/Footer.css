@@ -1,9 +1,10 @@
 .box1{
-    background-color: #da689d;
+    background: #aa0854;
+    background: linear-gradient(90deg, #aa0854 0%, #350452 55%, #090979 100%);
     height: 120px;
 }
 .box2{
-    background-color: #bd5b89;
+    background-color: #ffffff;
     height: 60px;
 }
 .redes{

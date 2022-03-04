@@ -1,3 +1,9 @@
 .text-decorator-none{
     text-decoration: none;
 }
+.temas{
+    background: #aa0854;
+    background: linear-gradient(90deg, #aa08549f 0%, #3504529f 55%, #0909799f 100%)!important;
+    color: #000000!important;
+    order-radius: 30px!important;
+}

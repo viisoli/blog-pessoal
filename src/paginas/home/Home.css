@@ -1,5 +1,6 @@
 .h1{
-    background-color: #da689dc7;
+    background: #aa0854;
+    background: linear-gradient(90deg, #aa08549f 0%, #3504529f 55%, #0909799f 100%);
     justify-content:center;
     border-radius: 30px;
     padding: 20px 20px 20px 20px;
@@ -8,15 +9,17 @@
 img{
     border-radius: 30px;
     margin: 30px;
+    width: 600px;
+    padding: 20px 20px 20px 20px;
+    justify-content: center;
 }
 .caixa{
-    background-image: url(../../assets/img/fundo2.png);
+    background-image: url(../../assets/img/background.jpg);
     background-repeat: no-repeat;
-    width:100vh;
 
-    min-height: calc(100vh - 138px);
+    min-height: calc(150vh - 138px);
 
-    background-size: cover;
+    background-size: cover !important;
     background-position: center;
 }
 .titulo{
@@ -25,7 +28,7 @@ img{
 }
 .botao{
     border-color: #ffffff!important;
-    background-color: #da689d!important;
+    background-color: #aa0854!important;
     color: #ffffff!important;
 }
 .postagens{
@@ -34,4 +37,11 @@ img{
 
 .text-decorator-none{
     text-decoration: none;
+}
+.typo1{
+    color: #ffffff !important;
+}
+.typo2{
+    color:#fffb00!important;
+    font-weight: bold!important;
 }

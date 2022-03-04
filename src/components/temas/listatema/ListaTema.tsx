@@ -6,6 +6,7 @@ import Tema from '../../../models/Tema';
 import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([])
@@ -16,7 +17,16 @@ function ListaTema() {
 
   useEffect(() => {
     if (token === "") {
-      alert("Você precisa estar logado")
+      toast.error('Você precisa estar logade!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+    });
       history.push("/login")
 
     }
@@ -39,7 +49,7 @@ function ListaTema() {
     {
       temas.map(tema => (
       <Box m={2} >
-        <Card variant="outlined">
+        <Card variant="outlined" className='temas'>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Tema
